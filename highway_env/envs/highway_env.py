@@ -106,7 +106,7 @@ class HighwayEnv(AbstractEnv):
             reward = utils.lmap(
                 reward,
                 [
-                    self.config["collision_reward"] + self.config["lane_change_reward"],
+                    self.config["collision_reward"],
                     self.config["high_speed_reward"] + self.config["right_lane_reward"],
                 ],
                 [0, 1],
